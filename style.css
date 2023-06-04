@@ -1,0 +1,14 @@
+body {
+    font-family: Helvetica;
+   }
+   h1 {
+    color: green;
+   }
+
+   .oferta {
+    color: red;
+    font-weight: bold;
+   }
+   .oferta:hover {
+    font-size: 18px;
+   }

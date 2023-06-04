@@ -1,0 +1,21 @@
+
+
+h1 {
+    color: rgb(30, 0, 255);
+   }
+h2 {
+    color: red;
+   }
+a:link {
+    color: rgb(255, 0, 0);
+   }
+a:visited {
+    color: rgb(221, 255, 0);
+   }
+a:hover {
+    text-decoration: none;
+   }
+
+ 
+    
+       
