@@ -5,12 +5,12 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
-        <link rel="stylesheet" href="CSS/index.css">  
+        <link rel="stylesheet" href="/CSS/index.css">  
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,wght@0,300;1,700&display=swap" rel="stylesheet">  
-        <script defer src="script.js"></script>
+        <script defer src="/script.js"></script>
         <title>
             El Faro - Inicio
         </title> 
@@ -223,7 +223,7 @@
                                         <h4>25 Mayo 2023</h4>
                                         <p>Presenta la situación de Gert-Jan, de 40 años, que sufre una lesión medular en las vértebras cervicales tras un accidente de bicicleta que dejó él parapléjico. Gracias al puente digital recuperó el control de sus piernas. Para establecer este puente digital, son necesarios dos tipos de implantes electrónicos. “Implantamos dispositivos llamados WIMAGINE sobre la región del cerebro responsable de los movimientos de las piernas”, explica la neurocirujana Jocelyne Bloch. Este dispositivo desarrollado por el CEA permite decodificar las señales eléctricas que genera el cerebro cuando pensamos en caminar. Al mismo tiempo, se colocó un neuroestimulador conectado a un campo de electrodos sobre la región de la médula espinal que controla el movimiento de las piernas”.</p>
                                         <video controls style="width: 250px; height: 250px;">
-                                        <source src="Videos/Video 1.mp4" type="video/mp4">
+                                        <source src="videos/Video 1.mp4" type="video/mp4">
                                         </video>
                                         <h5>
                                         <a href="https://www.latercera.com/que-pasa/noticia/el-increible-video-que-muestra-a-un-tetraplejico-volver-a-caminar-gracias-a-revolucionario-dispositivo/GOOKB3THAFGWNB5MMU2QI4LOKQ/">Publicado por La Tercera</a>
@@ -384,19 +384,39 @@
         </main>
 
 
-        <form id="formulario" class="formulario2">
+        <form action="/PHP/Model/Model_Contacto.php" id="Contacto" class="formulario2" method="post">
             <h2 class="formulario__titulo2">Contacto</h2>
 
-        <input id="Nombre" class="formulario__input2" type="text" >
+        <input id="Nombre2" name="Nombre2" class="formulario__input2" type="text" autofocus required>
         <label for="" class="formulario__label2">Nombre</label>
-        <input id="Mensaje" class="formulario__input2" type="text">
+        <input id="Mensaje" name="Mensaje" class="formulario__input2" type="text"autofocus required>
         <label for="" class="formulario__label2">Mensaje</label>
         
         <button class="formulario__submit2" type="submit">ENVIAR</button>
         </form>
-        <hr>
+        
 
-               
+
+        <form action="/PHP/Model/Model.php" id="Registro" class="formulario2" method="post">
+            <h2 class="formulario__titulo2">Registro de cuenta</h2>
+
+        <input id="Nombre" name="Nombre" class="formulario__input2" type="text" autofocus required>
+        <label for="" class="formulario__label2">Nombre</label>
+        <input id="Email" name="Email" class="formulario__input2" type="text" autofocus required>
+        <label for="" class="formulario__label2">Email</label>
+        <input id="Password" name="Password" class="formulario__input2" type="text" autofocus required>
+        <label for="" class="formulario__label2">Password</label>
+        
+        <button class="formulario__submit2" type="submit">Crear</button>
+        </form>
+        
+
+
+
+
+
+
+
 
 
         
